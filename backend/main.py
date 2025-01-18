@@ -3,7 +3,7 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
-@app.get("/")
+@app.post("/api/login")
 async def root():
     return {"message": "Hello World"}
 
